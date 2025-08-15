@@ -9,7 +9,7 @@ export default function Trust()
                 <Image src={'/images/paytm.png'} alt="paytm" width={100} height={50}/>
                 <Image src={'/images/delhivery.png'} alt="dehlivery" width={100} height={50}/>
                 <Image src={'/images/razorpay.svg'} alt="razorpay" width={100} height={50}/>
-                <Image src={'/images/delhivery.png'} alt="dehlivery" width={100} height={50}/>
+                <Image src={'/images/factory.png'} alt="tshirt-factory" width={100} height={50}/>
 
             </div>
         </div>

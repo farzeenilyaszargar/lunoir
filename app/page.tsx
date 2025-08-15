@@ -14,7 +14,7 @@ import Shopp from '@/components/shopp';
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
        
       <Load/>
       <Header/>

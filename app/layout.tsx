@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
+import ogImage from "@/public/ogImg-Card.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lunoir | Embrace Crazy Clothing",
   description: "here we create crazy but good quality shirts for you to wear. quality is king. free delivery. free return policy for 30 days. highest and most affordable shirts in India. simply the best of the best. ha hah ha ",
+  openGraph: {
+  images: [
+    {
+      url: ogImage.src,
+      width: ogImage.width,
+      height: ogImage.height,
+      alt: "Lunoir Preview Card",
+    },
+  ],
+}
 };
 
 export default function RootLayout({
@@ -28,9 +39,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
         {children}
       </body>
     </html>
