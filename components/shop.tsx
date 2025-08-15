@@ -30,8 +30,8 @@ export default function ProductGrid() {
     { id: 8, name: 'Floral King', price: 849, color: 'Off White', badge: 'Hot' , image: '/images/shirts/8.jpeg'},
   ]
   return (
-    <section id="grid" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      <div className="flex items-end justify-between">
+    <section id="grid" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 ">
+      <div id='shop-section' className="flex items-end justify-between scroll-mt-30">
         <h2 className="text-2xl font-bold">Best sellers</h2>
       </div>
       <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

@@ -63,3 +63,7 @@
     animation: reviews-n 1s linear ;
     transform: translateX(20%) translateY(0%);
 }
+
+html {
+  scroll-behavior: smooth;
+}
