@@ -10,28 +10,24 @@ export default function RootLayout() {
       setFadingOut(true);
       const removeTimer = setTimeout(() => setShowSplash(false), 500); // match fade duration
       return () => clearTimeout(removeTimer);
-    }, 1000); // show for 2 seconds
+    }, 500); // show for 0.5 seconds
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <html lang="en">
-      <body className="bg-white text-black">
-        {showSplash && (
+    
           <div
             className={`fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500 ease-out ${
-              fadingOut ? "opacity-0" : "opacity-100"
+              fadingOut ? "opacity-0" : "opacity-100"} ${showSplash?'':'hidden'
             }`}
           >
             <img
-              src="/shirt-bg.gif" // Place your GIF in public/splash.gif
+              src="/shirt-bg.gif"
               alt="Splash animation"
               className="w-48 h-48 object-contain"
             />
           </div>
-        )}
+        )
+  }
 
-      </body>
-    </html>
-  );
-}
+  
