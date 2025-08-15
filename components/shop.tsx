@@ -46,9 +46,9 @@ export default function ProductGrid() {
 function ProductCard({name, price, color, badge, image}:{name:string; price:number; color:string; badge:string; image:string}){
   return (
     <a href="#" className="group rounded-2xl bg-white border border-zinc-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      <div className="relative aspect-square overflow-hidden">
-        <div className="absolute inset-0 grid place-items-center bg-zinc-100">
-            <Image src={image} alt={name} width={200} height={200} className="w-max items-center justify-center flex"/>
+      <div className="relative aspect-square ">
+        <div className="absolute inset-0 grid place-items-center bg-zinc-100 overflow-hidden">
+            <Image src={image} alt={name} width={200} height={200} className="w-full items-center justify-center flex"/>
         </div>
         <span className="absolute left-2 top-2 rounded-full bg-black px-2 py-1 text-[10px] font-medium text-white">{badge}</span>
       </div>
