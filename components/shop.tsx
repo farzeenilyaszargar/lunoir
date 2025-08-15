@@ -20,14 +20,14 @@ function Stars({ rating = 5 }: { rating?: number }) {
 
 export default function ProductGrid() {
   const products = [
-    { id: 1, name: 'Classic Heavy Tee', price: 799, color: 'Jet Black', badge: 'Best Seller', image: '/images/1.png' },
-    { id: 2, name: 'Oversized Street Tee', price: 899, color: 'Bone', badge: 'Limited', image: '/images/2.png' },
-    { id: 3, name: 'Everyday Crew Tee', price: 699, color: 'White', badge: 'New', image: '/images/3.jpg' },
-    { id: 4, name: 'Athleisure Dry Tee', price: 849, color: 'Charcoal', badge: 'Hot' , image: '/images/4.png'},
-    { id: 5, name: 'Classic Heavy Tee', price: 799, color: 'Jet Black', badge: 'Best Seller', image: '/images/1.png' },
-    { id: 6, name: 'Oversized Street Tee', price: 899, color: 'Bone', badge: 'Limited', image: '/images/2.png' },
-    { id: 7, name: 'Everyday Crew Tee', price: 699, color: 'White', badge: 'New', image: '/images/3.jpg' },
-    { id: 8, name: 'Athleisure Dry Tee', price: 849, color: 'Charcoal', badge: 'Hot' , image: '/images/4.png'},
+    { id: 1, name: 'Rosy Posies', price: 799, color: 'Jet Blue', badge: 'Best Seller', image: '/images/shirts/1.jpeg' },
+    { id: 2, name: 'Flower Warrior', price: 899, color: 'Bone', badge: 'Limited', image: '/images/shirts/2.jpeg' },
+    { id: 3, name: 'Ocean and Life', price: 699, color: 'White', badge: 'New', image: '/images/shirts/3.jpeg' },
+    { id: 4, name: 'Poppies and Cherries', price: 849, color: 'Jet Blue', badge: 'Hot' , image: '/images/shirts/4.jpeg'},
+    { id: 5, name: 'Off White Floral', price: 799, color: 'Creamy White', badge: 'Best Seller', image: '/images/shirts/5.jpeg' },
+    { id: 6, name: 'Oh My Stars', price: 899, color: 'Bluey Blue', badge: 'Limited', image: '/images/shirts/6.jpeg' },
+    { id: 7, name: 'Basic Ah Hoodie', price: 699, color: 'Charcoal', badge: 'New', image: '/images/shirts/9.webp' },
+    { id: 8, name: 'Floral King', price: 849, color: 'Off White', badge: 'Hot' , image: '/images/shirts/8.jpeg'},
   ]
   return (
     <section id="grid" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
